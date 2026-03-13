@@ -1,0 +1,18 @@
+{
+    "name": "System Health Dashboard",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "mads-hartmann.bash-ide-vscode",
+                "redhat.vscode-yaml"
+            ]
+        }
+    },
+    "postCreateCommand": "/bin/bash ./.devcontainer/install-tools.sh",
+    "postAttachCommand": "git pull && /bin/bash ./.devcontainer/setup-env.sh && source ~/.bashrc && . ./bin/repo.sh"
+}

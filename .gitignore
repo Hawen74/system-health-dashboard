@@ -1,0 +1,22 @@
+# macOS
+._*
+.DS_Store
+
+# Windows
+[Dd]esktop.ini
+[Tt]humbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary
+*~
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Vim
+.netrwhist
+[._]*.sw[a-p]
